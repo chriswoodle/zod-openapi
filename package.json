@@ -1,9 +1,13 @@
 {
-    "name": "@anatine/zod-openapi",
-    "version": "1.0.0-alpha.1",
+    "name": "@woodle/zod-openapi",
+    "version": "1.0.0",
     "description": "Zod to OpenAPI converter",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/chriswoodle/zod-openapi.git"
+    },
     "license": "MIT",
     "keywords": [
         "zod",
@@ -11,12 +15,14 @@
         "swagger"
     ],
     "scripts": {
+        "prepack": "yarn build",
         "build": "tsc -p tsconfig.build.json",
         "test": "jest",
         "test:watch": "jest --watch"
     },
     "dependencies": {
-        "ts-deepmerge": "^6.0.3"
+        "ts-deepmerge": "^6.0.3",
+        "zod": "^3.24.1"
     },
     "devDependencies": {
         "@types/jest": "^29.5.14",
@@ -26,8 +32,7 @@
         "openapi3-ts": "^4.4.0",
         "ts-jest": "^29.1.2",
         "typescript": "^5.7.3",
-        "validator": "^13.12.0",
-        "zod": "^3.24.1"
+        "validator": "^13.12.0"
     },
     "peerDependencies": {
         "openapi3-ts": "4.4.0",
