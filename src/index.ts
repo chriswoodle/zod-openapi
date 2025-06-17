@@ -1,2 +1,3 @@
 export * from "./zod-extensions";
-export * from "./zod-openapi";
+export * as zodOpenApi30 from "./zod-openapi30";
+export * as zodOpenApi31 from "./zod-openapi31";
