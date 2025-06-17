@@ -1,4 +1,4 @@
-import { extendZodWithOpenApi } from "./zod-extensions";
+import { extendZodWithOpenApi } from "./zod-extensions30";
 import { z } from "zod";
 import { generateSchema } from './zod-openapi';
 
